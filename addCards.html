@@ -1,40 +1,52 @@
 <!DOCTYPE hmtl>
 <html>
 	<head>
-		<title> Welcome to your login! </title>
+		<title> CreateIdea! </title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
+
 	<body>
+        <header>
+            <h2> Home </h2>
+        </header>
+        <main>
+            <h2>Entries</h2>
 
-	</body>
+            <table class="ideas" id="ideas">
+                <tr>
+                    <th>Title 1</th>
+                    <th>Description 1</th>
+                </tr>
+                <tr>
+                    <th>Title 2</th>
+                    <th>Description 2</th>
+                </tr>
+                <tr>
+                    <th>Title 3</th>
+                    <th>Description 3</th>
+                </tr>
+            </table>
 
-	<table class="ideas" id="ideas">
-             <tr>
-                 <th>Title 1</th>
-                 <th>Description 1</th>
-             </tr>
-             <tr>
-                 <th>Title 2</th>
-                 <th>Description 2</th>
-             </tr>
-             <tr>
-                 <th>Title 3</th>
-                 <th>Description 3</th>
-             </tr>
+            <form onsubmit="return addIdea();" class="addEvent">
+                <div>
+                    Name <br/>
+                    <input type="text" name="IdeaName" id="IdeaName"/>
+                </div>
+                <div>
+                    Description <br/>
+                    <input type="text" name="IdeaDesc" id="IdeaDesc"/>
+                </div>
+                <div>
+                    <input type="submit"/>
+                </div>
+            </form>
 
-         </table>
-         <form onsubmit="return addIdea();">
-             Name <br/>
-             <input type="text" name="IdeaName" id="IdeaName"/> <br/>
-             Description <br/>
-             <input type="text" name="IdeaDesc" id="IdeaDesc"/> <br/>
-             <input type="submit"/>
-         </form>
+        </main>
+    </body>
 
-
-	<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
