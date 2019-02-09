@@ -1,9 +1,9 @@
 <!DOCTYPE hmtl>
 <html>
 	<head>
-		<title> Welcome to your login! </title>
+		<title> CreateIdea! </title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
@@ -26,34 +26,26 @@
                     <th>Title 3</th>
                     <th>Description 3</th>
                 </tr>
-                <script>
-                    function addIdea() {
-                        var name = document.getElementById("IdeaName").value;
-                        var description = document.getElementById("IdeaDesc").value;
-
-                        var table = document.getElementById("ideas");
-                        var str = "<tr><th>" + name + "</th><th>" + description + "</th>";
-                        table.innerHTML += str;
-                        return false;
-                    }
-                </script>
             </table>
 
             <form onsubmit="return addIdea();" class="addEvent">
                 <div>
                     Name <br/>
-                    <input type="text" name="IdeaName" id="IdeaName"/> 
+
+                    <input type="text" name="IdeaName" id="IdeaName"/>
                 </div>
-                <div> 
+                <div>
                     Description <br/>
-                    <input type="text" name="IdeaDesc" id="IdeaDesc"/> 
+                    <input type="text" name="IdeaDesc" id="IdeaDesc"/>
                 </div>
                 <div>
                     <input type="submit"/>
                 </div>
             </form>
+
         </main>
     </body>
+  
 <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -67,5 +59,7 @@
   };
   firebase.initializeApp(config);
 </script>
+
+<script src="addCards.js"></script>
 
 </html>
