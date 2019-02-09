@@ -2,7 +2,7 @@
 //var ideaDescriptions = document.getElementById("IdeaDesc");
 
 function addIdea() {
-			alert("Aye, matey, you've added another option!");
+			//alert("Aye, matey, you've added another option!");
 			var name = document.getElementById("IdeaName").value;
 			var description = document.getElementById("IdeaDesc").value;
 

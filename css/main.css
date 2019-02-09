@@ -30,7 +30,8 @@ table {
     text-align: center;
 }
 table, th, tr {
-    border: 3px solid #ff5555;
+    border: 3px solid #bd93f9;
+    background-color: #44475a;
     padding: 1em;
 }
 
@@ -84,10 +85,11 @@ header
 }*/
 
 .homeForm {
-    border: 3px solid #ff5555;
+    border: 3px solid #bd93f9;
     border-radius: 25px;
     width: 70%;
     margin: 0 auto;
+    background: #44475a;
     text-align: center;
 }
 
@@ -108,7 +110,7 @@ header
   #toHome:hover {
     cursor: pointer;
     text-decoration: none;
-    background: #c83c50;
+    background: #44475a;
     color: black;
   }
 
@@ -129,7 +131,7 @@ header
   #toCode:hover {
     cursor: pointer;
     text-decoration: none;
-    background: #c83c50;
+    background: #44475a;
     color: black;
   }
 
@@ -142,9 +144,11 @@ header
     padding: 10px;
 }
 .vote div {
-    background-color: #ff5555;
+    background-color: #44475a;;
     border-radius: 15px;
-    margin: .2em 1em;
+    margin: 1em 1em;
+    padding: 1em;
+    width: 70%;
 }
 
 .vote div:hover{

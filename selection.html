@@ -8,38 +8,49 @@
 	</head>
 	<body>
 		<script>
-			function voteA() {
-				alert("You have voted for A!");	
-			}
-			function voteB() {
-				alert("You have voted for B!");
+			function vote(name) {
+				alert("You have voted for "+ name + "!");	
 			}
 		</script>
 		<main>
 			<a href="index.html" id="toHome"><b>&#8592;</b></a>
 			<!--<a href="	" id="vote"><b>Vote</b></a>--> 	
 			<h2>Please select one</h2>
-			<div class="vote mainContainer">
-				<a onclick="voteA()">
-					<div class="divLeft vote ">
-						<h1 align="center">Name</h1>
-						
-						<hr style="color: #282a36">
+			<div id="cards" class="vote mainContainer">
 
-						<h1 align="center">Desription</h1>
-					</div>
-				</a>
-				
-				<a onclick="voteB()">
-					<div class="divRight vote ">
-						<h1 align="center">Name</h1>
-
-						<hr style="color: #282a36">
-
-						<h1 align="center">Desription</h1>
-					</div>
-				</a>
 			</div>
+			<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+			<script>
+					// Initialize Firebase
+				var config = {
+					apiKey: "AIzaSyBn-Ycv7YhDdCp6aaW5MhE6Y9EKthAFxW0", //Yo, don't leave your api keys out in the open  
+					authDomain: "votingproject-84015.firebaseapp.com",
+					databaseURL: "https://votingproject-84015.firebaseio.com",
+					projectId: "votingproject-84015",
+					storageBucket: "votingproject-84015.appspot.com",
+					messagingSenderId: "158912636558"
+				};
+				firebase.initializeApp(config);
+
+				var firebaseRef = firebase.database().ref();
+				var jsonData = {};
+				firebaseRef.on("value", function(snapshot) {
+					var desc = snapshot.val();
+					var keys = Object.keys(desc);
+					console.log(keys);
+					console.log(desc[keys[0]]);
+					var cards= document.getElementById("cards");
+					cards.innerHTML = "";
+					for(let i = 0; i < keys.length; i++) {
+						cards.innerHTML +="<a onclick=\"alert(\"You have voted for"+ keys[i] +"\")\"><div class=\"vote \"><h1 align=\"center\">"+ keys[i]+"</h1><hr style=\"color: #282a36\"><p align=\"center\">"+desc[keys[i]]+"</p></div></a>";
+					}
+									
+				}, function error() {
+					console.log("You are an error");
+				});
+
+				console.log(jsonData);
+			</script>
 					
 		</main>
 	</body>
