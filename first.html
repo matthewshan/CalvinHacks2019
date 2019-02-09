@@ -7,19 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <header>
-            <h2> Home </h2>
-          </header>
           <main>
-              <h1> Welcome to Simple Democracy </h1>
-              <p> Input code <br>
-                <button> Enter </button>
-              </p>
-              <p> OR
-              </p>
-              <p> Start a new deck <br>
-                <button> Start </button>
-              </p>
+            <form class="homeForm" id="codeInput">
+                <h2> Welcome to Simple Democracy </h2>              
+                Input code <br/>
+                <input type="text"/>
+                <input value="Enter" type="submit"/> 
+             </form>
+             <h3>OR</h3>
+            <div class="homeForm">
+                <a href="addCards.html"><h2>Create a new deck</h2></a>
+            </div>
           </main>
     </body>
 </html>

@@ -34,7 +34,7 @@ table, th, tr {
     padding: 1em;
 }
 
-.addEvent input[type="submit"]
+button, input[type="submit"]
 {
     padding: .1em;
     margin: 1em;
@@ -48,7 +48,7 @@ table, th, tr {
 	transition-duration: .5s;
 	font-size: 1em;
 }
-.addEvent input[type="submit"]:hover
+button:hover, input[type="submit"]:hover
 {
 	background: #44475a;
 	color: #f8f8f2;
@@ -73,7 +73,7 @@ header
     width: 100%;
 }
 
-button {
+/*button {
     background-color: black;
     border: black;
     color:  #50fa7b;
@@ -81,7 +81,57 @@ button {
     text-align: center;
     font-size: 18px;
     cursor: pointer;
+}*/
+
+.homeForm {
+    border: 3px solid #ff5555;
+    border-radius: 25px;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
 }
+
+#toHome {
+    border-radius: 5px;
+    padding: .65em .8em;
+    text-align: center;
+    background: #3CC86E;
+    color: black;
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+    bottom: 1em;
+    left: 1em;
+    text-decoration: none;
+    color: white;
+  }
+  #toHome:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background: #c83c50;
+    color: black;
+  }
+
+  #toCode {
+    border-radius: 5px;
+    padding: .65em .8em;
+    text-align: center;
+    background: #3CC86E;
+    color: black;
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+    bottom: 1em;
+    right: 1em;
+    text-decoration: none;
+    color: white;
+  }
+  #toCode:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background: #c83c50;
+    color: black;
+  }
 
 
 
