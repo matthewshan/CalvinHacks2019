@@ -9,9 +9,20 @@ main {
     text-align: center;
 }
 
+p {
+    padding: 30px;
+    font-size: 24px;
+}
+
+h1 {
+    padding: 50px;
+    color: cornsilk;
+}
+
 h2 {
     color: #50fa7b;
 }
+
 table {
     border-collapse: collapse;
     width: 80%;
@@ -61,4 +72,16 @@ header
     margin: 0;
     width: 100%;
 }
+
+button {
+    background-color: black;
+    border: black;
+    color:  #50fa7b;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
 
