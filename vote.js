@@ -1,0 +1,21 @@
+function addIdea() {
+			alert("Wow, thats alot of damage.");
+			var name = document.getElementById("IdeaName").value;
+			var description = document.getElementById("IdeaDesc").value;
+
+			//alert(name);
+			//alert(description);
+			var table = document.getElementById("ideas");
+			var str = "<tr><th>" + name + "</th><th>" + description + "</th>";
+			table.innerHTML += str;
+
+			var firebaseRef = firebase.database().ref();
+
+			firebaseRef.child(name).set(description);
+
+			//CREATE unqique, randomly generated child name:
+			//firebaseRef.push().set(description);
+
+
+			return false;
+	}
