@@ -10,8 +10,30 @@
 
 	</body>
 
+	<table class="ideas" id="ideas">
+             <tr>
+                 <th>Title 1</th>
+                 <th>Description 1</th>
+             </tr>
+             <tr>
+                 <th>Title 2</th>
+                 <th>Description 2</th>
+             </tr>
+             <tr>
+                 <th>Title 3</th>
+                 <th>Description 3</th>
+             </tr>
 
-// this is the the firebase beginning
+         </table>
+         <form onsubmit="return addIdea();">
+             Name <br/>
+             <input type="text" name="IdeaName" id="IdeaName"/> <br/>
+             Description <br/>
+             <input type="text" name="IdeaDesc" id="IdeaDesc"/> <br/>
+             <input type="submit"/>
+         </form>
+
+
 	<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -25,5 +47,7 @@
   };
   firebase.initializeApp(config);
 </script>
+
+<script src="addCards.js"></script>
 
 </html>
