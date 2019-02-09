@@ -7,25 +7,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
-		<style type="text/css">
-		.divLeft h3{
-				display:block;
-		}
-		.divRight h3{
-				display:block
-		}
-		</style>
-		<div class="mainContainer">
-			<div class="divLeft" style="background-color: darkcyan">
-				<h3>Name</h3>
-				<h3>Desription</h3>
-			</div>
+		<main>
+			<style type="text/css">
+			.mainContainer div{
+				display:inline-block;
+			}
+			.divLeft {
+				float:left;
+				width: 45%;
+				padding: 20px;
+			}
+			.divRight {
+				float:right;
+				width: 45%;
+				padding: 20px;
+			}
+			.divText {
+				padding: 10px;
+			}
+			</style>
+			
+			<div class="mainContainer">
+				<a href="">
+					<div class="divLeft" style="background-color: #ff5555">
+						<h1 align="center">Name</h1>
+						
+						<hr style="color: #282a36">
 
-			<div class="divRight" style="background-color: darkcyan">
-				<h3>Name</h3>
-				<h3>Desription</h3>
-			</div>
-		</div>
+						<h1 align="center">Desription</h1>
+					</div>
 
+					<div class="divRight" style="background-color: #ff5555">
+						<h1 align="center">Name</h1>
+
+						<hr style="color: #282a36">
+
+						<h1 align="center">Desription</h1>
+					</div>
+				</a>
+
+					<div class="divText">
+							<h1>Please select one</h1>
+					</div>	
+			</div>
+		</main>
 	</body>
 </html>
