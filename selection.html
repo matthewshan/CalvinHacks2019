@@ -1,0 +1,46 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title> Welcome to your login! </title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<script>
+			function voteA() {
+				alert("You have voted for A!");	
+			}
+			function voteB() {
+				alert("You have voted for B!");
+			}
+		</script>
+		<main>
+			<a href="index.html" id="toHome"><b>&#8592;</b></a>
+			<!--<a href="	" id="vote"><b>Vote</b></a>--> 	
+			<h2>Please select one</h2>
+			<div class="vote mainContainer">
+				<a onclick="voteA()">
+					<div class="divLeft vote ">
+						<h1 align="center">Name</h1>
+						
+						<hr style="color: #282a36">
+
+						<h1 align="center">Desription</h1>
+					</div>
+				</a>
+				
+				<a onclick="voteB()">
+					<div class="divRight vote ">
+						<h1 align="center">Name</h1>
+
+						<hr style="color: #282a36">
+
+						<h1 align="center">Desription</h1>
+					</div>
+				</a>
+			</div>
+					
+		</main>
+	</body>
+</html>

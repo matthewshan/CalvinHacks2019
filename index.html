@@ -1,31 +1,29 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title> Welcome to your login! </title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  	<head>
+		<title> Welcome to Simple Democracy </title>
+		<link rel="stylesheet" type= "text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
-	<body>
-		<style type="text/css">
-		.divLeft h3{
-				display:block;
-		}
-		.divRight h3{
-				display:block
-		}
-		</style>
-		<div class="mainContainer">
-			<div class="divLeft" style="background-color: darkcyan">
-				<h3>Name</h3>
-				<h3>Desription</h3>
+    <body>
+		<script>
+			function toVote() {
+				window.location.href = 'selection.html';
+			}
+		</script>
+        <main>
+            <div class="homeForm" id="codeInput">
+                <h2> Welcome to Simple Democracy </h2>              
+                Input code <br/>
+                <input type="text"/>
+				<button onclick="toVote()">Enter</button> 
 			</div>
-
-			<div class="divRight" style="background-color: darkcyan">
-				<h3>Name</h3>
-				<h3>Desription</h3>
-			</div>
-		</div>
-
-	</body>
+             <h3>OR</h3>
+            <div class="homeForm">
+                <a href="addCards.html"><h2>Create a new deck</h2></a>
+            </div>
+        </main>
+    </body>
 </html>
+

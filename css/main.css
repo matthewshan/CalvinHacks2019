@@ -86,7 +86,7 @@ header
 .homeForm {
     border: 3px solid #ff5555;
     border-radius: 25px;
-    width: 40%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
 }
@@ -132,6 +132,26 @@ header
     background: #c83c50;
     color: black;
   }
+
+  
+/*Selection.html*/
+.mainContainer div{
+    display:inline-block;
+}
+.divText {
+    padding: 10px;
+}
+.vote div {
+    background-color: #ff5555;
+    border-radius: 15px;
+    margin: .2em 1em;
+}
+
+.vote div:hover{
+    cursor: pointer;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+}
 
 
 
