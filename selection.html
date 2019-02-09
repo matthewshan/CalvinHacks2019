@@ -7,37 +7,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
+		<script>
+			function voteA() {
+				alert("You have voted for A!");	
+			}
+			function voteB() {
+				alert("You have voted for B!");
+			}
+		</script>
 		<main>
-			<style type="text/css">
-			.mainContainer div{
-				display:inline-block;
-			}
-			.divLeft {
-				float:left;
-				width: 45%;
-				padding: 20px;
-			}
-			.divRight {
-				float:right;
-				width: 45%;
-				padding: 20px;
-			}
-			.divText {
-				padding: 10px;
-			}
-			</style>
-			
-			<div class="mainContainer">
-				<a href="">
-					<div class="divLeft" style="background-color: #ff5555">
+			<a href="index.html" id="toHome"><b>&#8592;</b></a>
+			<!--<a href="	" id="vote"><b>Vote</b></a>--> 	
+			<h2>Please select one</h2>
+			<div class="vote mainContainer">
+				<a onclick="voteA()">
+					<div class="divLeft vote ">
 						<h1 align="center">Name</h1>
 						
 						<hr style="color: #282a36">
 
 						<h1 align="center">Desription</h1>
 					</div>
-
-					<div class="divRight" style="background-color: #ff5555">
+				</a>
+				
+				<a onclick="voteB()">
+					<div class="divRight vote ">
 						<h1 align="center">Name</h1>
 
 						<hr style="color: #282a36">
@@ -45,11 +39,8 @@
 						<h1 align="center">Desription</h1>
 					</div>
 				</a>
-
-					<div class="divText">
-							<h1>Please select one</h1>
-					</div>	
 			</div>
+					
 		</main>
 	</body>
 </html>

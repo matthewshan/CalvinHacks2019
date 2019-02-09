@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Welcome to Simple Democracy </title>
-    <link rel="stylesheet" type= "text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
+  	<head>
+		<title> Welcome to Simple Democracy </title>
+		<link rel="stylesheet" type= "text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
     <body>
-          <main>
-            <form class="homeForm" id="codeInput">
+		<script>
+			function toVote() {
+				window.location.href = 'selection.html';
+			}
+		</script>
+        <main>
+            <div class="homeForm" id="codeInput">
                 <h2> Welcome to Simple Democracy </h2>              
                 Input code <br/>
                 <input type="text"/>
-                <input value="Enter" type="submit"/> 
-             </form>
+				<button onclick="toVote()">Enter</button> 
+			</div>
              <h3>OR</h3>
             <div class="homeForm">
                 <a href="addCards.html"><h2>Create a new deck</h2></a>
             </div>
-          </main>
+        </main>
     </body>
 </html>
+
