@@ -7,8 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
-		<script>	
-
+		<script>
 			function vote(name) {
 				alert("You have voted for "+ name + "!");	
 			}
@@ -43,7 +42,7 @@
 					var cards= document.getElementById("cards");
 					cards.innerHTML = "";
 					for(let i = 0; i < keys.length; i++) {
-						cards.innerHTML +="<a onclick=\"vote(\""+ keys[i] +"\")\"><div class=\"vote \"><h1 align=\"center\">"+ keys[i]+"</h1><hr style=\"color: #282a36\"><h1 align=\"center\">"+desc[keys[i]]+"</h1></div></a>";
+						cards.innerHTML +="<a onclick=\"alert(\"You have voted for"+ keys[i] +"\")\"><div class=\"vote \"><h1 align=\"center\">"+ keys[i]+"</h1><hr style=\"color: #282a36\"><p align=\"center\">"+desc[keys[i]]+"</p></div></a>";
 					}
 									
 				}, function error() {

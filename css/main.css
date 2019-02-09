@@ -144,7 +144,9 @@ header
 .vote div {
     background-color: #ff5555;
     border-radius: 15px;
-    margin: .2em 1em;
+    margin: 1em 1em;
+    padding: 1em;
+    width: 70%;
 }
 
 .vote div:hover{
