@@ -14,16 +14,37 @@
 		</script>
         <main>
             <div class="homeForm" id="codeInput">
-                <h2> Welcome to Simple Democracy </h2>              
+                <h2> Welcome to Simple Democracy </h2>
                 Input code <br/>
                 <input type="text"/>
-				<button onclick="toVote()">Enter</button> 
-			</div>
+				            <button onclick="toVote()">Enter</button>
+      </div>
              <h3>OR</h3>
+
             <div class="homeForm">
-                <a href="addCards.html"><h2>Create a new deck</h2></a>
+                <!--<a onclick="return createUniqueID()" href="addCards.html"><h2>Create a new deck</h2></a> -->
+                <!-- <a href="addCards.html"><h2>Create a new deck</h2>
+                 onclick="createUniqueID();return false;"        </a> -->
+                <a id="createDeck" href="addCards.html" onClick=createUniqueID();><h2>Create a new deck</h2></a>
             </div>
         </main>
     </body>
-</html>
 
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBn-Ycv7YhDdCp6aaW5MhE6Y9EKthAFxW0", //Yo, don't leave your api keys out in the open
+        authDomain: "votingproject-84015.firebaseapp.com",
+        databaseURL: "https://votingproject-84015.firebaseio.com",
+        projectId: "votingproject-84015",
+        storageBucket: "votingproject-84015.appspot.com",
+        messagingSenderId: "158912636558"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="index.js"></script>
+
+</html>

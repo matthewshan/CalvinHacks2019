@@ -15,10 +15,8 @@ function addIdea() {
 			var firebaseRef = firebase.database().ref();
 
 			firebaseRef.child(name).set(description);
-
 			//CREATE unqique, randomly generated child name:
 			//firebaseRef.push().set(description);
-
 
 			return false;
 	}
