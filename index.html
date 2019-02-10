@@ -34,8 +34,10 @@
 
     <script>
       // Initialize Firebase
+      var mykey = config.MY_KEY;
+
       var config = {
-        apiKey: "AIzaSyBn-Ycv7YhDdCp6aaW5MhE6Y9EKthAFxW0", //Yo, don't leave your api keys out in the open
+        apiKey: mykey, //Yo, don't leave your api keys out in the open
         authDomain: "votingproject-84015.firebaseapp.com",
         databaseURL: "https://votingproject-84015.firebaseio.com",
         projectId: "votingproject-84015",
@@ -45,6 +47,7 @@
       firebase.initializeApp(config);
     </script>
 
+    <script type='text/javascript' src='config.js'></script>
     <script src="index.js"></script>
 
 </html>
